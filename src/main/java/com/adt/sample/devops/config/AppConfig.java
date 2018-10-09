@@ -11,6 +11,7 @@ import static org.hibernate.cfg.AvailableSettings.PASS;
 import static org.hibernate.cfg.AvailableSettings.SHOW_SQL;
 import static org.hibernate.cfg.AvailableSettings.URL;
 import static org.hibernate.cfg.AvailableSettings.USER;
+import static org.hibernate.cfg.AvailableSettings.DIALECT;;
 
 import java.util.Properties;
 
@@ -45,6 +46,7 @@ public class AppConfig {
 		props.put(URL, env.getProperty("mysql.url"));
 		props.put(USER, env.getProperty("mysql.user"));
 		props.put(PASS, env.getProperty("mysql.password"));
+		props.put(DIALECT, env.getProperty("mysql.dialect"));
 
 		// Setting Hibernate properties
 		props.put(SHOW_SQL, env.getProperty("hibernate.show_sql"));
