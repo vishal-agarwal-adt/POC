@@ -26,7 +26,7 @@ import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
-@PropertySource("file:${spring.config.location}/db.properties")
+@PropertySource("file:${spring.config.location}/restApi-sample-app.properties")
 @EnableTransactionManagement
 @ComponentScans(value = { @ComponentScan("com.adt.sample.devops.dao"),
 		@ComponentScan("com.adt.sample.devops.service") })
