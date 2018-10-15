@@ -79,7 +79,7 @@ public class AppConfig {
 		dataSource.setDriverClassName(env.getProperty("mysql.driver"));
 		dataSource.setUrl(env.getProperty("mysql.url"));
 		dataSource.setUsername(env.getProperty("mysql.user"));
-		dataSource.setPassword(env.getProperty("mysql.dialect"));
+		dataSource.setPassword(env.getProperty("mysql.password"));
 		return dataSource;
 	}
 
