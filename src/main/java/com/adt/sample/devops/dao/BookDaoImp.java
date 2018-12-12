@@ -18,7 +18,7 @@ import com.adt.sample.devops.model.Book;
 public class BookDaoImp implements BookDao {
 
 	@Autowired
-	private SessionFactory sessionFactory;
+	SessionFactory sessionFactory;
 
 	@Override
 	public long save(Book book) {

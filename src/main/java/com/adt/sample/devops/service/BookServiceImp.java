@@ -14,7 +14,7 @@ import com.adt.sample.devops.model.Book;
 public class BookServiceImp implements BookService {
 
 	@Autowired
-	private BookDao bookDao;
+	BookDao bookDao;
 
 	@Transactional
 	@Override
